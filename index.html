@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JODxREAL | VIP Channel</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1347039230551589');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1347039230551589&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --bg-dark: #080a0f;
+            --card-bg: rgba(18, 22, 33, 0.75);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --tg-blue: #0088cc;
+            --tg-blue-hover: #0099e6;
+            --text-main: #ffffff;
+            --text-muted: #94a3b8;
+            --gold-accent: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 136, 204, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-main);
+            padding: 20px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 410px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border-radius: 28px;
+            padding: 38px 24px 30px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            color: var(--gold-accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .profile-wrapper {
+            position: relative;
+            width: 115px;
+            height: 115px;
+            margin: 0 auto 20px;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .verified-tick {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            background: var(--tg-blue);
+            color: #fff;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            border: 2px solid var(--bg-dark);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 26px;
+            font-weight: 500;
+        }
+
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px 20px;
+            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 136, 204, 0.35);
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-btn:hover {
+            background: linear-gradient(135deg, #0099e6 0%, #0077b3 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 136, 204, 0.5);
+        }
+
+        .trust-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .footer {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #64748b;
+            text-align: center;
+        }
+
+        .footer a {
+            color: var(--tg-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .policy-links {
+            margin-top: 10px;
+            font-size: 11px;
+        }
+
+        .policy-links a {
+            color: #64748b;
+            text-decoration: underline;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="glass-card">
+            <!-- Quality Badge -->
+            <div class="badge">★ OFFICIAL VIP ACCESS</div>
+
+            <!-- Profile Image -->
+            <div class="profile-wrapper">
+                <img src="https://i.ibb.co/My5FNkF8/IMG-20260903-020753-298.jpg" alt="JODxREAL" class="profile-img">
+                <div class="verified-tick">✓</div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h1 class="title">JODxREAL</h1>
+            <p class="subtitle">Private Community • High Quality Signals</p>
+
+            <!-- CTA Button -->
+            <a href="https://telegram.me/+86uhpXztE-s0YjE1" class="cta-btn" onclick="fbq('track', 'Subscribe', {content_name: 'VIP Telegram Membership'});">
+                <span>REQUEST TO JOIN</span>
+                <span style="font-size: 18px;">➔</span>
+            </a>
+
+            <!-- Quality Trust Indicators -->
+            <div class="trust-info">
+                <div class="trust-item">🔒 Verified Channel</div>
+                <div class="trust-item">⚡ Instant Access</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Ads Managed By <a href="https://t.me/senorita_xoxo" target="_blank">@senorita_xoxo</a>
+            <div class="policy-links">
+                <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
